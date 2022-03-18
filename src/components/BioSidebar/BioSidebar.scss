@@ -1,0 +1,11 @@
+.bio-sidebar {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    .bio-image {
+        object-fit: contain;
+        max-height: 300px;
+        max-width: 300px;        
+    }
+}
