@@ -1,0 +1,15 @@
+.feed {
+    .lists {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        > *:not(:first-child) {
+            margin-top:10px;
+        }
+    }
+
+    > *:not(:first-child) {
+        margin-top:10px;
+    }
+}

@@ -1,5 +1,6 @@
 .publication {
-    .title {
-        font-size:1.5em;
+
+    > *:not(:first-child) {
+        margin-top:5px;
     }
 }

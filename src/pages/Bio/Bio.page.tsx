@@ -1,7 +1,8 @@
 import React from 'react';
+import FeedComponent from '../../components/Feed/Feed.component';
 
-import BioSidebarComponent from '../../components/BioSidebar/BioSidebar.component';
-import FeedContainer from '../../containers/Feed/Feed.container';
+import InfoCardComponent from '../../components/InfoCard/InfoCard.component';
+import PersonalCardComponent from '../../components/PersonalCard/PersonalCard.component';
 
 import './Bio.scss';
 
@@ -9,8 +10,9 @@ const BioPage = () => {
 	const kek = 'w';
 	return (
 		<div className="bio-page">
-			<FeedContainer className="main"/>
-			<BioSidebarComponent className="sidebar"/>
+			<InfoCardComponent/>
+			<PersonalCardComponent/>
+			<FeedComponent className="main"/>
 		</div>
 	);
 };

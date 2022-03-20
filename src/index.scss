@@ -3,10 +3,9 @@
 html, body {
     margin:0;
     padding:0;
-    font: 14px "Fira Sans", sans-serif;
+    font: 16px "Fira Sans", sans-serif;
     color: $main-text-color;
-    height:100%;
-
+    
     * {
         margin:0;
         padding:0;
@@ -16,9 +15,13 @@ html, body {
     ul, li {
         list-style: none;
     }   
+
+    p {
+        text-align:justify;
+    }
 }
 
-#root {
-    height:100%;
+.logo {
+    height:32px;
+    width:32px;
 }
-

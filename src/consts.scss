@@ -1,16 +1,16 @@
 //html body
-$main-text-color: rgb(51, 51, 51);
+$main-text-color: rgb(31, 31, 31);
 
 //main
-$main-bg-color: #fff1d09c;
+$main-bg-color: #fff3d59c;
 
 //header
 $header-height:50px;
-$header-bg-color: #008DD5;
+$header-bg-color: #fdebbf9c;
 
 //footer
 $footer-height:50px;
-$footer-bg-color: #008DD5;
+$footer-bg-color: #fff1d09c;
 
 //sidebar
 $sidebar-bg-color:#DFBBB1;
@@ -25,3 +25,29 @@ $width-big: 1920px;
 $width-avg: 1366px;
 $width-small: 768px;
 $width-min: 320px;
+
+
+//hover
+@mixin hover-filter {
+    filter: brightness(0.5);
+}
+
+//click
+@mixin transform-09 {
+    transform: scale(0.9);
+}
+
+//borders
+$border-color-basic:lightgray;
+$border-size-basic:1px;
+$border-size-bold:2px;
+$border-basic: $border-size-basic solid $border-color-basic;
+$border-bold: $border-size-bold solid $border-color-basic;
+
+//box-shadows
+$box-shadow-basic:
+    1px 0 0 0 $border-color-basic, 
+    0 1px 0 0 $border-color-basic, 
+    1px 1px 0 0 $border-color-basic,   /* Just to fix the corner */
+    1px 0 0 0 $border-color-basic inset, 
+    0 1px 0 0 $border-color-basic inset;

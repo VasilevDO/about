@@ -1,0 +1,23 @@
+.list {
+   display:flex;
+   flex-direction: column;
+
+   li {
+      display:inline-block;
+      margin-top:5px;
+   }
+   li:not(:first-child) {
+      margin-left:5px;
+   }
+
+   li::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0.5ch;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+}
