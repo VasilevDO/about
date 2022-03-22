@@ -1,12 +1,17 @@
+@import '../../consts.scss';
+
 .feed {
     .lists {
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
+        border-bottom: $border-basic;
 
-        > *:not(:first-child) {
-            margin-top:10px;
+        > .list {
+            // width:33%;
         }
+
     }
 
     > *:not(:first-child) {

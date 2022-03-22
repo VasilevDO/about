@@ -1,6 +1,8 @@
 import React from 'react';
 
 import bioImage from '../../assets/my-photo.jpg';
+import Publication from '../../models/Publication.model';
+import PublicationComponent from '../Publication/Publication.component';
 
 import './PersonalCard.scss';
 
@@ -12,8 +14,8 @@ const PersonalCardComponent = (props:PersonalCardComponentProps) => {
 	const {className} = props;
 	const componentClassName = `personal-card${className ? ' ' + className : ''}`;
 
-	const title = 'Hello, my name is Dmitrii';
-	const text = `And I like to code. I started my journey like 2 years ago 
+	const personalTitle = 'Hello, my name is Dmitrii';
+	const personalText = `And I like to code. I started my journey like 2 years ago 
 	when I just opened notepad and created my first HelloWorld.html file. Then
 	I realised that no magic happens without big and scary javascript. And php. Thanks god
 	that is not true btw. Step by step I was moving forward on the way to create my very
@@ -25,12 +27,15 @@ const PersonalCardComponent = (props:PersonalCardComponentProps) => {
 	too) current work routines. Then I completed EPAM javascript developer studying program
 	and currently Im working as EPAM intership student.`;
 
+	const personalInfo = new Publication(personalTitle, personalText);
+
+	const publications = [personalInfo];
+
 	return (
 		<div className={componentClassName}>
 			<img src={bioImage} className="card-image"/>
 			<div className="card-content">
-				<h3>{title}</h3>
-				<p>{text}</p>
+				{publications.map(u => <PublicationComponent key={u.title} title={u.title} text={u.text}/>)}
 			</div>
 		</div>
 	);

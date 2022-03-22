@@ -21,17 +21,17 @@
         }   
     }
 
-    
-
     .card-image {
         object-fit: contain;
-        max-height: 200px;
-        max-width: 200px;   
+        min-width: 200px; 
+        width: 200px; 
+        min-height: 200px;
+        height: 200px;
         border-radius: 10%;
+        border: $border-bold;
     }
 
     .card-content {
-        flex-grow: 1;
 
         > * {
             margin-bottom:10px;

@@ -27,6 +27,7 @@ export const MY_WORK_EXPERIENCE = [{
 	copmany: 'OOO MEGAL',
 	position: 'production managment engineer',
 }];
+export const MY_LANGUAGES = [{language: 'Russian', level: 'native'}, {language: 'English', level: 'b2+ (according to EPAM assessment)'}];
 
 export const SKILLS_HARD = ['HTML', 'JavaScript', 'CSS/SCSS/SASS', 'React', 'Redux', 'Node.js/Express', 'SQL/ElephantSQL/Sequelize', 'Mongoose', 'Webpack', 'Jest', 'Git/Github/Gitlab', 'Jira'];
 export const SKILLS_SOFT = ['Agile/Scrum', 'Open minded', 'Self-motivated', 'Self-organized', 'Communication', 'Teammate'];

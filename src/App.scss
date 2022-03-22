@@ -11,15 +11,18 @@
         flex-grow:1;
         
         @media screen and (max-width:$width-avg) {
-                width:100%;        
+                width:100%;    
+                padding:$padding-big;      
         }
 
         @media screen and (min-width:$width-avg) and (max-width:$width-big) {
-                width:$width-avg;        
+                width:$width-avg;
+                padding:$padding-big;        
         }
         
         @media screen and (min-width:$width-big) {
-                width:$width-big;        
+                width:$width-big;    
+                padding:$padding-giant;     
         }
     }
 }

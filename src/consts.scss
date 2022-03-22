@@ -2,15 +2,16 @@
 $main-text-color: rgb(31, 31, 31);
 
 //main
-$main-bg-color: #fff3d59c;
+$main-bg-color: #fff4d4;
+// $main-bg-color: #bfb8ad44;
 
 //header
 $header-height:50px;
-$header-bg-color: #fdebbf9c;
+$header-bg-color: #fde4a39c;
+// $header-bg-color: #fdebbf9c;
 
 //footer
 $footer-height:50px;
-$footer-bg-color: #fff1d09c;
 
 //sidebar
 $sidebar-bg-color:#DFBBB1;
@@ -19,6 +20,7 @@ $sidebar-bg-color:#DFBBB1;
 //utils
 $padding-big:20px;
 $padding-basic:10px;
+$padding-giant:20px 40px;
 
 //width params
 $width-big: 1920px;
@@ -38,6 +40,7 @@ $width-min: 320px;
 }
 
 //borders
+$border-radius-basic:4px;
 $border-color-basic:lightgray;
 $border-size-basic:1px;
 $border-size-bold:2px;
