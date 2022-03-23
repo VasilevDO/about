@@ -2,7 +2,7 @@ import React from 'react';
 import ListComponent from '../List/List.component';
 
 import PublicationComponent from '../Publication/Publication.component';
-import {MY_EDUCATION_DEPARTMENT, MY_EDUCATION_FACULTY, MY_EDUCATION_GRADES, MY_EDUCATION_UNIVERSITY, MY_INTERESTS, MY_LANGUAGES, MY_WORK_EXPERIENCE, SKILLS_HARD, SKILLS_SOFT} from '../../consts/app.const';
+import {MY_CURRENT_LOCATION, MY_DATE_OF_BIRTH, MY_EDUCATION_DEPARTMENT, MY_EDUCATION_FACULTY, MY_EDUCATION_GRADES, MY_EDUCATION_UNIVERSITY, MY_INTERESTS, MY_LANGUAGES, MY_WORK_EXPERIENCE, SKILLS_HARD, SKILLS_SOFT} from '../../consts/app.const';
 import Publication from '../../models/Publication.model';
 
 import './Feed.scss';
@@ -56,7 +56,14 @@ const FeedComponent = (props:FeedComponentProps) => {
 	const languages = MY_LANGUAGES.map(u => `${u.language} - ${u.level}`);
 	const languagesInfo = new Publication(languagesTitle, languages);
 
-	const publications = [educationInfo, workExperienceInfo, languagesInfo];
+	const otherTitle = 'Other';
+	const otherText = [
+		`Date of birth: ${MY_DATE_OF_BIRTH}`, `Current location: ${MY_CURRENT_LOCATION}`,
+	];
+
+	const otherInfo = new Publication(otherTitle, otherText);
+
+	const publications = [educationInfo, languagesInfo, workExperienceInfo, otherInfo];
 
 	return (
 		<div className={componentClassName}>

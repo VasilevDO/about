@@ -31,13 +31,16 @@ $width-min: 320px;
 
 //hover
 @mixin hover-filter {
-    filter: brightness(0.5);
+    filter: brightness(0.8);
 }
 
 //click
 @mixin transform-09 {
     transform: scale(0.9);
 }
+
+//buttons
+$button-main-bg:rgb(140, 255, 190);
 
 //borders
 $border-radius-basic:4px;

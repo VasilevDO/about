@@ -4,18 +4,40 @@
    display:flex;
    flex-direction: column;
    align-items: center;
+   
+   // ul {
+   //    display:grid;
+   //    grid-auto-columns: 1fr;
+   //    grid-template-columns:repeat(4,auto);
+   //    width:100%;
+   //    column-gap: 10px;
+   //    row-gap: 10px;
+   //    justify-content: space-around;
 
+   //    li {
+   //       justify-self:center;
+   //       width:100%;
+   //       display:inline-block;
+   //       border:$border-bold;
+   //       border-radius: $border-radius-basic;
+   //       background-color: $button-main-bg;
+   //       padding:5px;
+
+   //       p {
+   //          text-align:center;
+   //       }
+   //    }
    ul {
       display:flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
 
-
       li {
          display:inline-block;
-         margin-top:5px;
+         margin:5px;
          border:$border-bold;
          border-radius: $border-radius-basic;
+         background-color: $button-main-bg;
          padding:5px;
       }
 

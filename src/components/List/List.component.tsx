@@ -17,7 +17,7 @@ const ListComponent = (props:ListComponentProps) => {
 			<h3 className="title">{title}</h3>
 			<ul >
 				{options.map(u =>
-					<li key={u} className="option">{u}</li>,
+					<li key={u} className="option"><p>{u}</p></li>,
 				)}
 
 			</ul>

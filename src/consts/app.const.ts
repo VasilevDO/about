@@ -1,7 +1,10 @@
+import BeautifulDate from '../models/BeautifulDate.model';
+
 export const APP_TITLE = 'pwnzf';
 
 export const MY_EMAIL = 'pwnzforever@gmail.com';
 export const MY_NAME = 'Dmitrii Vasilev';
+export const MY_DATE_OF_BIRTH = new BeautifulDate(new Date(1993, 2, 5)).getDateStr();
 export const MY_OCCUPATION = 'Web developer';
 export const MY_PHONE_NUMBER = '+7-952-277-02-98';
 export const MY_GITHUB = 'https://www.github.com/VasilevDO';
@@ -28,6 +31,7 @@ export const MY_WORK_EXPERIENCE = [{
 	position: 'production managment engineer',
 }];
 export const MY_LANGUAGES = [{language: 'Russian', level: 'native'}, {language: 'English', level: 'b2+ (according to EPAM assessment)'}];
+export const MY_CURRENT_LOCATION = 'Saint-Petersburg, Russia';
 
-export const SKILLS_HARD = ['HTML', 'JavaScript', 'CSS/SCSS/SASS', 'React', 'Redux', 'Node.js/Express', 'SQL/ElephantSQL/Sequelize', 'Mongoose', 'Webpack', 'Jest', 'Git/Github/Gitlab', 'Jira'];
+export const SKILLS_HARD = ['HTML', 'JavaScript', 'CSS/SCSS/SASS', 'React', 'Redux', 'Node.js/Express', 'SQL/ElephantSQL/Sequelize', 'Mongoose', 'Webpack', 'Unit testing/Jest', 'Git/Github/Gitlab', 'Jira'];
 export const SKILLS_SOFT = ['Agile/Scrum', 'Open minded', 'Self-motivated', 'Self-organized', 'Communication', 'Teammate'];
