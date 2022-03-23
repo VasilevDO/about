@@ -2,20 +2,15 @@
 $main-text-color: rgb(31, 31, 31);
 
 //main
-$main-bg-color: #fff4d4;
-// $main-bg-color: #bfb8ad44;
+$main-bg-color: rgba(237, 239, 243, 0.777);
 
 //header
 $header-height:50px;
-$header-bg-color: #ffd9799c;
-// $header-bg-color: #fdebbf9c;
+// $header-bg-color: #7bf1a849;
+$header-bg-color: #BBDEF0;
 
 //footer
 $footer-height:50px;
-
-//sidebar
-$sidebar-bg-color:#DFBBB1;
-
 
 //utils
 $padding-big:20px;
@@ -28,9 +23,24 @@ $width-avg: 1366px;
 $width-small: 768px;
 $width-min: 320px;
 
+//buttons
+$button-main-bg:rgb(223, 223, 223);
+// $button-main-bg:#e5e5e5;
 
-//hover
+//borders
+$border-radius-basic:4px;
+$border-color-basic:rgb(150, 150, 150);
+$border-size-basic:1px;
+$border-size-bold:2px;
+$border-basic: $border-size-basic solid $border-color-basic;
+$border-bold: $border-size-bold solid $border-color-basic;
+
+//box-shadows
+$box-shadow-basic: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+    //hover
 @mixin hover-filter {
+    background-color: $button-main-bg;
     filter: brightness(0.8);
 }
 
@@ -38,22 +48,3 @@ $width-min: 320px;
 @mixin transform-09 {
     transform: scale(0.9);
 }
-
-//buttons
-$button-main-bg:#fde4a39c;
-
-//borders
-$border-radius-basic:4px;
-$border-color-basic:rgb(180, 180, 180);
-$border-size-basic:1px;
-$border-size-bold:2px;
-$border-basic: $border-size-basic solid $border-color-basic;
-$border-bold: $border-size-bold solid $border-color-basic;
-
-//box-shadows
-$box-shadow-basic:
-    1px 0 0 0 $border-color-basic, 
-    0 1px 0 0 $border-color-basic, 
-    1px 1px 0 0 $border-color-basic,   /* Just to fix the corner */
-    1px 0 0 0 $border-color-basic inset, 
-    0 1px 0 0 $border-color-basic inset;

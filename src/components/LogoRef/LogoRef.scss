@@ -9,12 +9,10 @@
     &:active {
         @include transform-09;
         @include hover-filter;
-        background-color: $main-bg-color;
     }
     
     &:hover {
         @include hover-filter;
-        background-color: $main-bg-color;
     }
 
     img, a {
