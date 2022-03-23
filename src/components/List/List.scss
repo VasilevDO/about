@@ -12,28 +12,6 @@
       text-align: center;
    }
    
-   // ul {
-   //    display:grid;
-   //    grid-auto-columns: 1fr;
-   //    grid-template-columns:repeat(4,auto);
-   //    width:100%;
-   //    column-gap: 10px;
-   //    row-gap: 10px;
-   //    justify-content: space-around;
-
-   //    li {
-   //       justify-self:center;
-   //       width:100%;
-   //       display:inline-block;
-   //       border:$border-bold;
-   //       border-radius: $border-radius-basic;
-   //       background-color: $button-main-bg;
-   //       padding:5px;
-
-   //       p {
-   //          text-align:center;
-   //       }
-   //    }
    ul {
       display:flex;
       flex-wrap: wrap;
@@ -47,20 +25,5 @@
          background-color: $button-main-bg;
          padding:5px;
       }
-
-      // li::before {
-      //    content: '';
-      //    display: inline-block;
-      //    vertical-align: middle;
-      //    margin: 0 0.5ch;
-      //    width: 3px;
-      //    height: 3px;
-      //    border-radius: 50%;
-      //    background-color: currentColor;
-      //  }
    }
-
-  
-
-  
 }
