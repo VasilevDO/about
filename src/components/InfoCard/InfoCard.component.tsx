@@ -4,7 +4,7 @@ import {MY_EMAIL, MY_GITHUB, MY_INSTAGRAM, MY_LINKEDIN, MY_NAME, MY_OCCUPATION, 
 
 import './InfoCard.scss';
 
-import GitLogo from '../../assets/GitHub-Mark-32px.png';
+import GitLogo from '../../assets/GitHub-Mark-64px.png';
 import InstagramLogo from '../../assets/instagramLogo.png';
 import LinkedinLogo from '../../assets/linkedin-logo.png';
 import LogoRef from '../../models/LogoRef.model';
