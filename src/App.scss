@@ -15,14 +15,14 @@
                 padding:$padding-big;      
         }
 
-        @media screen and (min-width:$width-avg) and (max-width:$width-big) {
-                width:$width-avg;
-                padding:$padding-big;        
-        }
-        
         @media screen and (min-width:$width-big) {
                 width:$width-big;    
                 padding:$padding-giant;     
+        }
+
+        @media screen and (min-width:$width-avg) and (max-width:$width-big) {
+                width:$width-avg;
+                padding:$padding-big;        
         }
     }
 }
