@@ -1,11 +1,10 @@
 import React from 'react';
 
-import {MY_EMAIL, MY_GITHUB, MY_INSTAGRAM, MY_LINKEDIN, MY_NAME, MY_OCCUPATION, MY_PHONE_NUMBER} from '../../consts/app.const';
+import {MY_EMAIL, MY_GITHUB, MY_LINKEDIN, MY_NAME, MY_OCCUPATION, MY_PHONE_NUMBER} from '../../consts/app.const';
 
 import './InfoCard.scss';
 
 import GitLogo from '../../assets/GitHub-Mark-64px.png';
-import InstagramLogo from '../../assets/instagramLogo.png';
 import LinkedinLogo from '../../assets/linkedin-logo.png';
 import LogoRef from '../../models/LogoRef.model';
 import LogoRefComponent from '../LogoRef/LogoRef.component';
@@ -24,7 +23,6 @@ const InfoCardComponent = (props:InfoCardComponentProps) => {
 	const logoRefs = [
 		new LogoRef(LinkedinLogo, MY_LINKEDIN, 'linkedin-logo'),
 		new LogoRef(GitLogo, MY_GITHUB, 'github-logo'),
-		new LogoRef(InstagramLogo, MY_INSTAGRAM, 'instagram-logo'),
 	];
 
 	const contacts = [
