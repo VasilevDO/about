@@ -21,6 +21,33 @@ html, body {
     }
 }
 
+#root {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    min-width:$width-min;   
+    background-color: $main-bg-color;
+    .container {
+        flex-grow:1;
+        
+        @media screen and (max-width:$width-avg) {
+                width:100%;    
+                padding:$padding-big;      
+        }
+
+        @media screen and (min-width:$width-big) {
+                width:$width-big;    
+                padding:$padding-giant;     
+        }
+
+        @media screen and (min-width:$width-avg) and (max-width:$width-big) {
+                width:$width-avg;
+                padding:$padding-big;        
+        }
+    }
+}
+
 .logo {
     height:32px;
     width:32px;

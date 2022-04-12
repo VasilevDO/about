@@ -7,10 +7,10 @@ const FooterComponent = () => {
 	const footerText = APP_TITLE;
 	const date = new Date().getFullYear();
 	return (
-		<div className="footer">
+		<footer className="footer">
 			<span>{footerText}</span>
 			<span>{date}</span>
-		</div>
+		</footer>
 	);
 };
 

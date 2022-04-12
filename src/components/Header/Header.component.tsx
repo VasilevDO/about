@@ -5,9 +5,9 @@ import './Header.scss';
 const HeaderComponent = () => {
 	const title = 'pwnzf/about';
 	return (
-		<div className="header">
+		<header className="header">
 			<span>{title}</span>
-		</div>
+		</header>
 	);
 };
 
