@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAC;EACN,OAAO,EAAC,IAAI;EACZ,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,UAAU;CAW9B;;AAdD,AAII,SAJK,GAIH,CAAC,AAAA,IAAK,CAAA,WAAW,EAAE;EACjB,aAAa,ECyBF,GAAG,CAEY,KAAK,CAHnB,OAAkB;EDvB9B,cAAc,EAAE,IAAI;EACpB,aAAa,EAAE,IAAI;CACtB;;AARL,AAUI,SAVK,CAUL,QAAQ,CAAC;EACL,KAAK,EAAC,KAAK;EACX,OAAO,ECCF,IAAI;CDAZ",
+    "sources": [
+        "Bio.scss",
+        "../../consts.scss"
+    ],
+    "names": [],
+    "file": "Bio.css"
+}

@@ -2,12 +2,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = {
+module.exports = (env, argv) => ({
 	entry: ['@babel/polyfill', './src/index.js'],
+	devtool: argv.mode === 'development' ? 'source-map' : false,
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].[fullhash].js',
+	},
+	optimization: {
+		minimize: argv.mode === 'production',
+		minimizer: [new TerserPlugin()],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -64,7 +70,11 @@ module.exports = {
 			},
 		],
 	},
+	performance: {
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000,
+	},
 	devServer: {
 		historyApiFallback: true,
 	},
-};
+});
