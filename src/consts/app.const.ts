@@ -35,3 +35,7 @@ export const MY_CURRENT_LOCATION = 'Saint-Petersburg, Russia';
 
 export const SKILLS_HARD = ['HTML', 'JavaScript', 'CSS/SCSS/SASS', 'React', 'Redux', 'Node.js/Express', 'SQL/ElephantSQL/Sequelize', 'Mongoose', 'Webpack', 'Unit testing/Jest', 'Git/Github/Gitlab', 'Jira'];
 export const SKILLS_SOFT = ['Agile/Scrum', 'Open minded', 'Self-motivated', 'Self-organized', 'Communication', 'Teammate'];
+
+export const LINKS_GITHUB_POKEDEX_PAGE = 'https://vasilevdo.github.io/pokedex/';
+export const LINKS_GITHUB_CHAT = 'https://github.com/VasilevDO/chat';
+export const LINKS_GITHUB_FULLSTACK = 'https://github.com/VasilevDO/fs';

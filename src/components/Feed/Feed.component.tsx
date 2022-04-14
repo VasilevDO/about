@@ -2,7 +2,7 @@ import React from 'react';
 import ListComponent from '../List/List.component';
 
 import PublicationComponent from '../Publication/Publication.component';
-import {MY_CURRENT_LOCATION, MY_DATE_OF_BIRTH, MY_EDUCATION_DEPARTMENT, MY_EDUCATION_FACULTY, MY_EDUCATION_GRADES, MY_EDUCATION_UNIVERSITY, MY_INTERESTS, MY_LANGUAGES, MY_WORK_EXPERIENCE, SKILLS_HARD, SKILLS_SOFT} from '../../consts/app.const';
+import {LINKS_GITHUB_CHAT, LINKS_GITHUB_FULLSTACK, LINKS_GITHUB_POKEDEX_PAGE, MY_CURRENT_LOCATION, MY_DATE_OF_BIRTH, MY_EDUCATION_DEPARTMENT, MY_EDUCATION_FACULTY, MY_EDUCATION_GRADES, MY_EDUCATION_UNIVERSITY, MY_INTERESTS, MY_LANGUAGES, MY_WORK_EXPERIENCE, SKILLS_HARD, SKILLS_SOFT} from '../../consts/app.const';
 import Publication from '../../models/Publication.model';
 
 import './Feed.scss';
@@ -40,6 +40,17 @@ const FeedComponent = (props:FeedComponentProps) => {
     unix systems and deploying web applications on a remote server, Adobe Photoshop and other graphical tools.`;
 	const additionalInfo = new Publication(additionaTitle, additionalText);
 
+	const projectsTitle = 'Projects';
+	const pokedexProjectComponent = <p><a href={LINKS_GITHUB_POKEDEX_PAGE} target="_blank" rel="noreferrer">Pokedex</a> - frontend project where u can browse and catch pokemons.
+	Built with React and custom Webpack configuration (no react-scripts).</p>;
+	const chatProjectComponent = <p><a href={LINKS_GITHUB_CHAT} target="_blank" rel="noreferrer">Chat</a> - fullstack (React + Express) chat demo based on WebSocket (socket.io).</p>;
+	const fullstackProjectComponent = <p><a href={LINKS_GITHUB_FULLSTACK} target="_blank" rel="noreffer noreferrer">Fullstack</a> - fullstack (MongoDB, Express, React and Node.js) organizer.
+	Login server, calculator, weather table, currency table, todo list, blog and little games (tictactoe, sudoku). Currently dead because I cant get access to my MongoDB account.
+	</p>;
+	const projectsContent = [pokedexProjectComponent, chatProjectComponent, fullstackProjectComponent];
+
+	const projectInfo = new Publication(projectsTitle, projectsContent);
+
 	const educationTitle = 'Education';
 	const graduation = `Graduation: ${MY_EDUCATION_GRADES.map(u => `${u.grade} (${u.year})`).join(', ')}`;
 	const department = `Department: ${MY_EDUCATION_DEPARTMENT}`;
@@ -69,7 +80,8 @@ const FeedComponent = (props:FeedComponentProps) => {
 		<div className={componentClassName}>
 			<div className="lists">
 				{lists.map(u => <ListComponent key={u.title} title={u.title} options={u.options}/>)}
-				<PublicationComponent key={additionalInfo.title} title={additionalInfo.title} text={additionalInfo.text}/>
+				<PublicationComponent title={additionalInfo.title} text={additionalInfo.text}/>
+				<PublicationComponent title={projectInfo.title} text={projectInfo.text}/>
 			</div>
 			{publications.map(u => <PublicationComponent key={u.title} title={u.title} text={u.text}/>)}
 		</div>

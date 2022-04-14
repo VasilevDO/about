@@ -30,7 +30,7 @@
             width:100%;
         }
 
-        .list {
+        &>*:not(:last-child) {
             margin-bottom: 10px;
         }
     }    
