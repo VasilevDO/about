@@ -25,11 +25,6 @@ const InfoCardComponent = (props:InfoCardComponentProps) => {
 		new LogoRef(GitLogo, MY_GITHUB, 'github-logo'),
 	];
 
-	const contacts = [
-		MY_EMAIL,
-		MY_PHONE_NUMBER,
-	];
-
 	return (
 		<div className={componentClassName}>
 			<div className="info">
@@ -37,7 +32,8 @@ const InfoCardComponent = (props:InfoCardComponentProps) => {
 				<h2>{occupation}</h2>
 			</div>
 			<div className="contacts">
-				{contacts.map((u, i) => <p key={i}>{u}</p>)}
+				<a href={`mailto:${MY_EMAIL}`}>{MY_EMAIL}</a>
+				<a href={`tel:${MY_PHONE_NUMBER}`}>{MY_PHONE_NUMBER}</a>
 				<div className="logos">
 					{logoRefs.map((u, i) => <LogoRefComponent key={i} src={u.src} href={u.ref} alt={u.alt}/>)}
 				</div>

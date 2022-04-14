@@ -55,6 +55,10 @@
             margin-top:5px;
         }
 
+        a {
+            color: $main-text-color;
+        }
+
         .logos {
             display:flex;
             flex-direction: row;
