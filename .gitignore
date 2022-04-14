@@ -9,6 +9,9 @@
 # testing
 /coverage
 
+# mapping
+*.map
+
 # production
 /build
 build
