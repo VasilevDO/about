@@ -11,10 +11,6 @@ module.exports = (env, argv) => ({
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].[fullhash].js',
 	},
-	// Optimization: {
-	// 	minimize: argv.mode === 'production',
-	// 	minimizer: [new TerserPlugin()],
-	// },
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'src/index.html'),
@@ -83,10 +79,6 @@ module.exports = (env, argv) => ({
 				},
 			}),
 		],
-	},
-	performance: {
-		maxEntrypointSize: 512000,
-		maxAssetSize: 512000,
 	},
 	devServer: {
 		historyApiFallback: true,

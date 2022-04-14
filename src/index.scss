@@ -21,23 +21,23 @@ html, body {
     }
 
     a {
-        color: $text-link-color;
+        color: $main-text-color;
         cursor: pointer;
         text-decoration: none;
         position: relative;
-
-        &:not(.logo-ref):before {
+        font-weight: 500;
+        &:after {
             content: '';
             position: absolute;
             bottom: 0;
-            right: 0;
-            width: 0;
-            height: 2px;
+            left: 0;
+            width: 1rem;
+            height: 1px;
             background-color: $text-link-color;
-            transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
           }
-        &:not(.logo-ref):hover {
-            &:before{
+        &:hover {
+            &:after{
                 left: 0;
                 right: auto;
                 width: 100%;
