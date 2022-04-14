@@ -11,10 +11,10 @@ type PublicationComponentProps={
 const PublicationComponent = (props:PublicationComponentProps) => {
 	const {className, title, text} = props;
 
-	const textElement = React.isValidElement(text)
-		? text
-		: Array.isArray(text)
-			? text.map((u, i) => <p key={i} className="text">{u}</p>)
+	const textElement = Array.isArray(text)
+		? text.map((u, i) => React.isValidElement(u) ? <div key={i}>{u}</div> : <p key={i} className="text">{u}</p>)
+		: React.isValidElement(text)
+			? text
 			: <p className="text">{text}</p>;
 
 	const componentClassName = `publication${className ? ' ' + className : ''}`;
