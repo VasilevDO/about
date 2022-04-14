@@ -62,12 +62,12 @@ html, body {
         }
 
         @media screen and (min-width:$width-big) {
-                width:$width-big;    
+                max-width:$width-big;    
                 padding:$padding-giant;     
         }
 
         @media screen and (min-width:$width-avg) and (max-width:$width-big) {
-                width:$width-avg;
+                max-width:$width-avg;
                 padding:$padding-big;        
         }
     }
