@@ -33,7 +33,7 @@ const PersonalCardComponent = (props:PersonalCardComponentProps) => {
 
 	return (
 		<div className={componentClassName}>
-			<img src={bioImage} className="card-image"/>
+			<img src={bioImage} alt="me" className="card-image"/>
 			<div className="card-content">
 				{publications.map(u => <PublicationComponent key={u.title} title={u.title} text={u.text}/>)}
 			</div>

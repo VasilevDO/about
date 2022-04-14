@@ -64,10 +64,6 @@ module.exports = {
 			},
 		],
 	},
-	performance: {
-		maxEntrypointSize: 512000,
-		maxAssetSize: 512000,
-	},
 	devServer: {
 		historyApiFallback: true,
 	},
