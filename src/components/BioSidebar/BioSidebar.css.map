@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,OAAO,EAAC,IAAI;EACZ,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAOtB;;AAVD,AAKI,YALQ,CAKR,UAAU,CAAC;EACP,UAAU,EAAE,OAAO;EACnB,UAAU,EAAE,KAAK;EACjB,SAAS,EAAE,KAAK;CACnB",
-    "sources": [
-        "BioSidebar.scss"
-    ],
-    "names": [],
-    "file": "BioSidebar.css"
-}
