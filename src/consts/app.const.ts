@@ -28,7 +28,7 @@ export const MY_WORK_EXPERIENCE = [{
 {
 	date: '09/2017 - present',
 	copmany: 'OOO MEGAL',
-	position: 'production managment engineer',
+	position: 'production management engineer',
 }];
 export const MY_LANGUAGES = [{language: 'Russian', level: 'native'}, {language: 'English', level: 'b2+ (according to EPAM assessment)'}];
 export const MY_CURRENT_LOCATION = 'Saint-Petersburg, Russia';

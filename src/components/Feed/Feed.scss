@@ -5,8 +5,20 @@
     column-gap: 20px;
     row-gap: 10px;
 
+    > .publication {
+        border-radius: $border-radius-basic;
+        border:$border-basic;
+        box-shadow: $box-shadow-slim;
+    }
+
     @media screen and (max-width:$width-small) {
         grid-template-columns: 100%;
+        > .publication {
+            border-radius: 0;
+            border:none;
+            border-bottom:$border-basic;
+            box-shadow: none;
+        }
     }
 
     @media screen and (min-width:$width-small) and (max-width:$width-big) {
@@ -23,11 +35,10 @@
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        border-bottom: $border-basic;
-        padding-bottom: 10px;
 
         .publication {
             width:100%;
+            border-bottom: $border-basic;
         }
 
         &>*:not(:last-child) {

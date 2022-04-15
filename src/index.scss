@@ -4,6 +4,8 @@ html, body {
     margin:0;
     padding:0;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size:16px;
+    font-weight: 400;
     color: $main-text-color;
     
     * {
@@ -52,13 +54,17 @@ html, body {
     align-items: center;
     min-height: 100vh;
     min-width:$width-min;   
+    width:100%;  
     background-color: $main-bg-color;
     .container {
         flex-grow:1;
         
-        @media screen and (max-width:$width-avg) {
-                width:100%;    
+        @media screen and (max-width:$width-small) {
                 padding:$padding-big;      
+        }
+
+        @media screen and (min-width:$width-small) and (max-width:$width-avg) {
+                padding:$padding-giant;      
         }
 
         @media screen and (min-width:$width-big) {
