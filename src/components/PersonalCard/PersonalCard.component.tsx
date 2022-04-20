@@ -19,8 +19,8 @@ const PersonalCardComponent = (props:PersonalCardComponentProps) => {
 	engineer I realized that I want to know more about web technologies.
 	Started with self-education at <a href="https://www.javascript.info">javascript.info</a> then I
 	completed EPAM javascript developer (frontend focused) training program and joined EPAM node.js backend project.
-	I really like to be a part of a team making something useful and cool, interact with people, learn something new and grow up
-	personally.</p>;
+	I really like to be a part of a team making something useful and cool, interact with people, learn something new and reach new goals<br/>
+	Now I have almost 2 years of experience in developing web applications, my core stack is React+Node+Express+PosgtreSQL</p>;
 
 	// Const personalText = `And I like to code. I started my journey like 2 years ago
 	// when I just opened notepad and created my first HelloWorld.html file. Then
