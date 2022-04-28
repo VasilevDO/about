@@ -20,19 +20,8 @@ const PersonalCardComponent = (props:PersonalCardComponentProps) => {
 	Started with self-education at <a href="https://www.javascript.info">javascript.info</a> then I
 	completed EPAM javascript developer (frontend focused) training program and joined EPAM node.js backend project.
 	I really like to be a part of a team making something useful and cool, interact with people, learn something new and reach new goals<br/>
-	Now I have almost 2 years of experience in developing web applications, my core stack is React+Node+Express+PosgtreSQL</p>;
-
-	// Const personalText = `And I like to code. I started my journey like 2 years ago
-	// when I just opened notepad and created my first HelloWorld.html file. Then
-	// I realised that no magic happens without big and scary javascript. And php. Thanks god
-	// that is not true btw. Step by step I was moving forward on the way to create my very
-	// first web application - my organiser. It was Mongo-Express-React-Node fullstack project
-	// deployed on a remote hosting that can give you an information about weather, currency
-	// rates and also remind you about things that you have to do. Thats how programming
-	// became my hobby. But why not to try to develop my hobby into something bigger? First of
-	// all, I started to create something little web applications to organise my (and my colleagues
-	// too) current work routines. Then I completed EPAM javascript developer studying program
-	// and currently Im working in EPAMintern.`;
+	Now I have almost 2 years of experience in developing web applications. <br/>
+	My core stack: <h4>React+Node+Express+PosgtreSQL</h4></p>;
 
 	const personalInfo = new Publication(personalTitle, personalText);
 
