@@ -2,7 +2,7 @@ import React from 'react';
 import ListComponent from '../List/List.component';
 
 import PublicationComponent from '../Publication/Publication.component';
-import {LINKS_GITHUB_CHAT, LINKS_GITHUB_FULLSTACK, LINKS_GITHUB_POKEDEX_PAGE, MY_CURRENT_LOCATION, MY_DATE_OF_BIRTH, MY_EDUCATION_DEPARTMENT, MY_EDUCATION_FACULTY, MY_EDUCATION_GRADES, MY_EDUCATION_UNIVERSITY, MY_INTERESTS, MY_LANGUAGES, MY_WORK_EXPERIENCE, SKILLS_HARD, SKILLS_SOFT} from '../../consts/app.const';
+import {LINKS_GITHUB_CHAT, LINKS_GITHUB_CONCALC, LINKS_GITHUB_FULLSTACK, LINKS_GITHUB_POKEDEX_PAGE, MY_CURRENT_LOCATION, MY_DATE_OF_BIRTH, MY_EDUCATION_DEPARTMENT, MY_EDUCATION_FACULTY, MY_EDUCATION_GRADES, MY_EDUCATION_UNIVERSITY, MY_INTERESTS, MY_LANGUAGES, MY_WORK_EXPERIENCE, SKILLS_HARD, SKILLS_SOFT} from '../../consts/app.const';
 import Publication from '../../models/Publication.model';
 
 import './Feed.scss';
@@ -43,11 +43,13 @@ const FeedComponent = (props:FeedComponentProps) => {
 	const projectsTitle = 'Examples';
 	const pokedexProjectComponent = <p><a href={LINKS_GITHUB_POKEDEX_PAGE} target="_blank" rel="noreferrer">Pokedex</a> - frontend project where u can browse and catch pokemons.
 	Built with React and custom Webpack configuration (no react-scripts).</p>;
-	const chatProjectComponent = <p><a href={LINKS_GITHUB_CHAT} target="_blank" rel="noreferrer">Chat</a> - fullstack (React + Express) chat demo based on WebSocket (socket.io).</p>;
-	const fullstackProjectComponent = <p><a href={LINKS_GITHUB_FULLSTACK} target="_blank" rel="noreferrer">Fullstack</a> - fullstack (MongoDB, Express, React and Node.js) organizer.
+	const chatProjectComponent = <p><a href={LINKS_GITHUB_CHAT} target="_blank" rel="noreferrer">Chat</a> - fullstack - React + Node.js + Express - chat demo based on WebSockets (socket.io).</p>;
+	const fullstackProjectComponent = <p><a href={LINKS_GITHUB_FULLSTACK} target="_blank" rel="noreferrer">Fullstack</a> - fullstack - MongoDB, Express, React and Node.js - organizer.
 	Login server, calculator, weather table, currency table, todo list, blog and little games (tictactoe, sudoku). Currently dead because I cant get access to my MongoDB account.
 	</p>;
-	const projectsContent = [pokedexProjectComponent, chatProjectComponent, fullstackProjectComponent];
+	const concalcProject = <p><a href={LINKS_GITHUB_CONCALC} target="_blank" rel="noreferrer">Constructor-calculator</a> - frontend - React+TypeScript+Redux(saga) calculator,
+	where u can build a calculator with blocks (drag and drop - react-beautiful-dnd library).</p>;
+	const projectsContent = [pokedexProjectComponent, chatProjectComponent, fullstackProjectComponent, concalcProject];
 
 	const projectInfo = new Publication(projectsTitle, projectsContent);
 

@@ -39,3 +39,4 @@ export const SKILLS_SOFT = ['Agile/Scrum', 'Open minded', 'Self-motivated', 'Sel
 export const LINKS_GITHUB_POKEDEX_PAGE = 'https://vasilevdo.github.io/pokedex/';
 export const LINKS_GITHUB_CHAT = 'https://github.com/VasilevDO/chat';
 export const LINKS_GITHUB_FULLSTACK = 'https://github.com/VasilevDO/fs';
+export const LINKS_GITHUB_CONCALC = 'https://vasilevdo.github.io/constructor-calc/';
