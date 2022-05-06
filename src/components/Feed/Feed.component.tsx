@@ -41,13 +41,13 @@ const FeedComponent = (props:FeedComponentProps) => {
 	const additionalInfo = new Publication(additionaTitle, additionalText);
 
 	const projectsTitle = 'Examples';
-	const pokedexProjectComponent = <p><a href={LINKS_GITHUB_POKEDEX_PAGE} target="_blank" rel="noreferrer">Pokedex</a> - frontend project where u can browse and catch pokemons.
+	const pokedexProjectComponent = <p><a href={LINKS_GITHUB_POKEDEX_PAGE} target="_blank" rel="noreferrer">Pokedex</a> - frontend application where u can browse and catch pokemons.
 	Built with React and custom Webpack configuration (no react-scripts).</p>;
 	const chatProjectComponent = <p><a href={LINKS_GITHUB_CHAT} target="_blank" rel="noreferrer">Chat</a> - fullstack - React + Node.js + Express - chat demo based on WebSockets (socket.io).</p>;
 	const fullstackProjectComponent = <p><a href={LINKS_GITHUB_FULLSTACK} target="_blank" rel="noreferrer">Fullstack</a> - fullstack - MongoDB, Express, React and Node.js - organizer.
 	Login server, calculator, weather table, currency table, todo list, blog and little games (tictactoe, sudoku). Currently dead because I cant get access to my MongoDB account.
 	</p>;
-	const concalcProject = <p><a href={LINKS_GITHUB_CONCALC} target="_blank" rel="noreferrer">Constructor-calculator</a> - frontend - React+TypeScript+Redux(saga) calculator,
+	const concalcProject = <p><a href={LINKS_GITHUB_CONCALC} target="_blank" rel="noreferrer">Constructor-calculator</a> - frontend - React+TypeScript+Redux(saga) application,
 	where u can build a calculator with blocks (drag and drop - react-beautiful-dnd library).</p>;
 	const projectsContent = [pokedexProjectComponent, chatProjectComponent, fullstackProjectComponent, concalcProject];
 
